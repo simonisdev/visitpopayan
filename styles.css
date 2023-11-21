@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header__background {
+    width: 100vw;
+    height: 100vh;
+}
+.header__background--img {
+    width: 100%;
+}
+
+.container_video--capitulo {
+    background-color: #000;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+.container_video--capitulo iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .header__background{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+    }
+}
