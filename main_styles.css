@@ -14,21 +14,26 @@
 }
   body {
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  main{
+    flex-grow: 1;
   }
   header {
-    /* background-color: #333; */
-    color: #fff;
-    /* padding: 10px; */
+    background-color: var(--color-experiencial);
+    height: 4px;
     display: flex;
     justify-content: space-between;
   }
 
-  nav{
+  nav {
     display: flex;
     height: 40px;
     justify-content: right;
     align-items: center;
-    padding: 0 20px;
+    /* padding: 0 20px; */
   }
   
   nav ul {
@@ -83,7 +88,6 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 15%;
-    /* background-color: var(--color-gastronomico); */
   }
   .section__main--right {
     background-image: url('/images/franja-doble-right.png');
@@ -91,7 +95,6 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 15%;
-    /* background-color: var(--color-religioso); */
   }
   .franja-header {
     height: 100%;
@@ -103,13 +106,12 @@
 .capitulos {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
+    grid-gap: 40px;
     padding: 20px;
   }
 .capitulo {
     position: relative;
     overflow: hidden;
-    background-color: rgb(33, 33, 33);
     border-radius: 8px;
   }  
   .capitulo img {
