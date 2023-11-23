@@ -185,6 +185,7 @@
   @media screen and (max-width: 767px) {
     .capitulos {
       grid-template-columns: 1fr;
+      padding-top: 20px;
     }
 
       /* contenido extra */
