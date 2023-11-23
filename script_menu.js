@@ -1,4 +1,3 @@
-// Datos de ejemplo para los capítulos (puedes remplazarlos con tus propios datos)
 const capitulos = [
     {
         id: 'capitulo1',

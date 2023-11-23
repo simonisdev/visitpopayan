@@ -1,4 +1,4 @@
-:root{
+:root {
     --color-cultural: #e30d7e;
     --color-religioso: #a1492a;
     --color-gastronomico: #fac332;
@@ -7,7 +7,7 @@
     --color-deportivo: #1761e2;
     --color-fondo-naranja: #d47600;
 }
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -18,30 +18,8 @@
     flex-direction: column;
     min-height: 100vh;
   }
-  main{
+  .main{
     flex-grow: 1;
-  }
-  header {
-    background-color: var(--color-experiencial);
-    height: 5px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  nav {
-    display: flex;
-    /* height: 40px; */
-    justify-content: right;
-    align-items: center;
-    /* padding: 0 20px; */
-  }
-  
-  nav ul {
-    list-style: none;
-  }  
-  nav a {
-    text-decoration: none;
-    font-weight: bold;
   }
 
   .menu-principal {
@@ -81,20 +59,23 @@
   /* menú principal de capítulos */
   .section__main {
     display: flex;
+    /* flex-grow: 1; */
   }
   .section__main--left {
-    background-image: url('/images/franja-doble-left.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     width: 15%;
+    text-align: center;
+  }
+  .section__main--left img {
+    width: 50%;
   }
   .section__main--right {
-    background-image: url('/images/franja-doble-right.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #1761e2;
+    display: flex;
+    justify-content: right;
     width: 15%;
+  }
+  .section__main--right img {
+    width: 100%;
   }
   .franja-header {
     height: 100%;
@@ -160,10 +141,9 @@
 
 /* fin seccion menu miniauturas */
 
-  footer {
-    /* background-color: var(--color-fondo-naranja); */
+  .footer {
+    background-color: #fff;
     display: flex;
-    padding: 10px;
     height: 100%;
     width: 100%;
     flex-direction: column;
@@ -172,7 +152,7 @@
   .footer__banner--container {
     height: 10%;
   }
-  .footer__banner {
+  .footer__banner--link .footer__banner {
     width: 100vw;
   }
 
