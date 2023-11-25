@@ -1,6 +1,6 @@
 const capitulos = [
     {
-        id: 'capitulo1_new',
+        id: 'capitulo2_new',
         imagen: '/images/cap1_01.jpg',
         titulo: 'Capítulo 1',
         sinopsis: 'Ciudad Bohemia'},
@@ -10,42 +10,42 @@ const capitulos = [
         titulo: 'Capítulo 2',
         sinopsis: 'Popayán Construida por Mujeres' },
     {
-        id: 'capitulo3',
+        id: 'capitulo2_new',
         imagen: '/images/cap3_01.jpg',
         titulo: 'Capítulo 3',
         sinopsis: 'Popayán Capital de las Culturas' },
     {
-        id: 'capitulo4',
+        id: 'capitulo2_new',
         imagen: '/images/cap4_01.jpg',
         titulo: 'Capítulo 4',
         sinopsis: 'Gastronomía en Popayán' },
     {
-        id: 'capitulo5',
+        id: 'capitulo2_new',
         imagen: '/images/cap5_01.jpg',
         titulo: 'Capítulo 5',
         sinopsis: 'El Lenguaje de las Flores' },    
     {
-        id: 'capitulo6',
+        id: 'capitulo2_new',
         imagen: '/images/cap6_01.jpg',
         titulo: 'Capítulo 6',
         sinopsis: 'Ser Campesino por un Día' },
     {
-        id: 'capitulo7',
+        id: 'capitulo2_new',
         imagen: '/images/cap7_01.jpg',
         titulo: 'Capítulo 7',
         sinopsis: 'Popayán de Aventura' },
     {
-        id: 'capitulo8',
+        id: 'capitulo2_new',
         imagen: '/images/cap8_01.jpg',
         titulo: 'Capítulo 8',
         sinopsis: 'Un Viaje a las Estrellas' },        
     {
-        id: 'capitulo9',
+        id: 'capitulo2_new',
         imagen: '/images/cap9_01.jpg',
         titulo: 'Capítulo 9',
         sinopsis: 'Popayán Ciudad de Pasión' },        
     {
-        id: 'capitulo10',
+        id: 'capitulo2_new',
         imagen: '/images/cap10_01.jpg',
         titulo: 'Capítulo 10',
         sinopsis: 'Popayán Ciudad del Amor Eterno' },

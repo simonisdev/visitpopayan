@@ -47,7 +47,7 @@
   /* menú principal de capítulos */
   .section__main {
     display: flex;
-    max-height: 90vh;
+    max-height: 70vh;
   }
   .section__main--left,
   .section__main--right {
@@ -142,7 +142,13 @@
 }
 .container_info--capitulo {
   flex-direction: column;
-  background-color: aquamarine;
+  padding: 20px;
+}
+.container_info--capitulo h1 {
+  margin-bottom: 20px;
+}
+.container_info--capitulo p {
+  text-align: justify;
 }
 /* .container_video--capitulo iframe {
   width: 100%;
@@ -232,6 +238,7 @@
 
     .section__main {
       display: block;
+      max-height: 0;
     }
     /* laterales */
     .section__main--left,
@@ -241,6 +248,13 @@
     .container_info--capitulo,
     .container_video--capitulo {
       width: 100vw;
-      margin: 15px 0;
+    }
+
+    .footer__banner--container {
+      /* margin-top: 10px; */
+      /* height: 10%; */
+      position: absolute;
+      margin-top: 15px;
+      /* bottom: 0; */
     }
   }

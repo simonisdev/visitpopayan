@@ -16,17 +16,6 @@ body {
     width: 100%;
 }
 
-/* .container_video--capitulo {
-    background-color: #000;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-}
-.container_video--capitulo iframe {
-    width: 100%;
-    height: 100%;
-} */
-
 /* responsive */
 @media (max-width: 768px) {
     .header__background{
