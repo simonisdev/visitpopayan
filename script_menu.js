@@ -1,11 +1,11 @@
 const capitulos = [
     {
-        id: 'capitulo1',
+        id: 'capitulo1_new',
         imagen: '/images/cap1_01.jpg',
         titulo: 'Capítulo 1',
         sinopsis: 'Ciudad Bohemia'},
     {
-        id: 'capitulo2',
+        id: 'capitulo2_new',
         imagen: '/images/cap2_01.jpg',
         titulo: 'Capítulo 2',
         sinopsis: 'Popayán Construida por Mujeres' },
