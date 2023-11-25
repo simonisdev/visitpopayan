@@ -4,7 +4,7 @@ const capitulos = [
       imagen: '/images/cap1_01.jpg',
       titulo: 'Capítulo 1',
       sinopsis: 'Ciudad Bohemia',
-      youtubeID: 'ffEFNTG-PlI&t' },
+      youtubeID: 'ffEFNTG-PlI' },
   {
       id: 'capitulo2',
       imagen: '/images/cap2_01.jpg',

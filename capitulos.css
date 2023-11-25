@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.detalles-capitulo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video {
+  flex: 1 0 60%; /* 60% del ancho disponible */
+  margin-right: 20px;
+}
+
+.texto {
+  flex: 1 0 30%; /* 30% del ancho disponible */
+}
+
+.navegacion {
+  flex: 1 0 100%; /* 100% del ancho disponible */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.miniatura {
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.miniatura img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carrusel-fotos {
+  flex: 1 0 100%; /* 100% del ancho disponible */
+  margin-top: 20px;
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+}
+
+.carrusel img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+a.regresar {
+  color: #fff;
+  text-decoration: none;
+}
