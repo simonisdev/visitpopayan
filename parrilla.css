@@ -198,9 +198,10 @@
     justify-content: space-between;
   }
   .footer__banner--container {
+    background-color: #fff;
     margin-top: 10px;
     height: 10%;
-    position: relative;
+    /* position: absolute; */
     bottom: 0;
   }
   .footer__banner--link .footer__banner {
@@ -251,10 +252,15 @@
     }
 
     .footer__banner--container {
-      /* margin-top: 10px; */
-      /* height: 10%; */
-      position: absolute;
+      position: fixed;
       margin-top: 15px;
-      /* bottom: 0; */
+    }
+    .footer__banner--link .footer__banner {
+      position: fixed;
+    }
+    .container_info--capitulo{
+      margin-bottom: 50px;
+      padding-left: 20%;
+      padding-right: 20%;
     }
   }
