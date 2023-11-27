@@ -1,6 +1,6 @@
 const capitulos = [
     {
-        id: 'capitulo2_new',
+        id: 'capitulo1',
         imagen: '/images/miniaturas/cap1_miniatura.png',
         titulo: 'Capítulo 1',
         sinopsis: 'Ciudad Bohemia'},

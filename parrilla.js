@@ -1,88 +1,104 @@
 const capitulos = [
-  {
-      id: 'capitulo1',
+    {
+      id: 'cap1',
       imagen: '/images/cap1_01.jpg',
-      titulo: 'Capítulo 1',
+      episodio: '1',
+      titulo: 'Ciudad Bohemia',
       sinopsis: 'Ciudad Bohemia',
-      youtubeID: 'ffEFNTG-PlI' },
-  {
-      id: 'capitulo2',
+      youtubeID: 'ffEFNTG-PlI'
+    },
+    {
+      id: 'cap2',
       imagen: '/images/cap2_01.jpg',
-      titulo: 'Capítulo 2',
+      episodio: '2',
+      titulo: 'Popayán Construida por Mujeres',
       sinopsis: 'Popayán Construida por Mujeres',
-      youtubeID: 'codigoVideo' },
-  {
-      id: 'capitulo3',
+      youtubeID: 'codigoVideo'
+    },
+    {
+      id: 'cap3',
       imagen: '/images/cap3_01.jpg',
-      titulo: 'Capítulo 3',
+      episodio: '3',
+      titulo: 'Popayán Capital de las Culturas',
       sinopsis: 'Popayán Capital de las Culturas',
-      youtubeID: 'codigoVideo' },
-  {
-      id: 'capitulo4',
+      youtubeID: 'codigoVideo'
+    },
+    {
+      id: 'cap4',
       imagen: '/images/cap4_01.jpg',
-      titulo: 'Capítulo 4',
+      episodio: '4',
+      titulo: 'Gastronomía en Popayán',
       sinopsis: 'Gastronomía en Popayán',
-      youtubeID: 'codigoVideo' },
-  {
-      id: 'capitulo5',
+      youtubeID: 'codigoVideo'
+    },
+    {
+      id: 'cap5',
       imagen: '/images/cap5_01.jpg',
-      titulo: 'Capítulo 5',
+      episodio: '5',
+      titulo: 'El Lenguaje de las Flores',
       sinopsis: 'El Lenguaje de las Flores',
-      youtubeID: 'codigoVideo' },    
-  {
-      id: 'capitulo6',
+      youtubeID: 'codigoVideo'
+    },
+    {
+      id: 'cap6',
       imagen: '/images/cap6_01.jpg',
-      titulo: 'Capítulo 6',
+      episodio: '6',
+      titulo: 'Ser Campesino por un Día',
       sinopsis: 'Ser Campesino por un Día',
-      youtubeID: 'codigoVideo' },
-  {
-      id: 'capitulo7',
+      youtubeID: 'codigoVideo'
+    },
+    {
+      id: 'cap7',
       imagen: '/images/cap7_01.jpg',
-      titulo: 'Capítulo 7',
+      episodio: '7',
+      titulo: 'Popayán de Aventura',
       sinopsis: 'Popayán de Aventura',
-      youtubeID: 'codigoVideo' },
-  {
-      id: 'capitulo8',
+      youtubeID: 'codigoVideo'
+    },
+    {
+      id: 'cap8',
       imagen: '/images/cap8_01.jpg',
-      titulo: 'Capítulo 8',
+      episodio: '8',
+      titulo: 'Un Viaje a las Estrellas',
       sinopsis: 'Un Viaje a las Estrellas',
-      youtubeID: 'codigoVideo' },        
-  {
-      id: 'capitulo9',
+      youtubeID: 'codigoVideo'
+    },
+    {
+      id: 'cap9',
       imagen: '/images/cap9_01.jpg',
-      titulo: 'Capítulo 9',
+      episodio: '9',
+      titulo: 'Popayán Ciudad de Pasión',
       sinopsis: 'Popayán Ciudad de Pasión',
-      youtubeID: 'codigoVideo' },        
-  {
-      id: 'capitulo10',
+      youtubeID: 'codigoVideo'
+    },
+    {
+      id: 'cap10',
       imagen: '/images/cap10_01.jpg',
-      titulo: 'Capítulo 10',
+      episodio: '10',
+      titulo: 'Popayán Ciudad del Amor Eterno',
       sinopsis: 'Popayán Ciudad del Amor Eterno',
-      youtubeID: 'codigoVideo' },
+      youtubeID: 'codigoVideo'
+    }  
 ];
 
 // Función para generar dinámicamente las miniaturas de los capítulos
 function generarMiniaturas() {
-
   const submenuCapitulos = document.querySelector('.submenu-capitulos');
 
-capitulos.forEach(capitulo => {
-  const enlaceCapitulo = document.createElement('a');
-  enlaceCapitulo.href = 'contenido-' + capitulo.id + '.html';
-  // Asigna una URL única para cada capítulo.
+  capitulos.forEach(capitulo => {
+    const enlaceCapitulo = document.createElement('a');
+    enlaceCapitulo.href = 'contenido-' + capitulo.id + '.html'; // Asigna una URL única para cada capítulo.
+    enlaceCapitulo.textContent = `Episodio ${capitulo.episodio}: ${capitulo.titulo}`;
 
-  enlaceCapitulo.textContent = capitulo.titulo;
+    const liCapitulo = document.createElement('li');
+    liCapitulo.appendChild(enlaceCapitulo);
 
-  const liCapitulo = document.createElement('li');
-  liCapitulo.appendChild(enlaceCapitulo);
-
-  submenuCapitulos.appendChild(liCapitulo);
-});
+    submenuCapitulos.appendChild(liCapitulo);
+  });
 
   const seccionCapitulos = document.querySelector('.capitulos');
 
   capitulos.forEach(capitulo => {
-
     const divCapitulo = document.createElement('div');
     divCapitulo.classList.add('capitulo');
 
@@ -94,41 +110,15 @@ capitulos.forEach(capitulo => {
     divSinopsis.classList.add('sinopsis');
     divSinopsis.textContent = capitulo.sinopsis;
 
-    // divCapitulo.addEventListener('click', function () {
-    //   window.location.href = '/' + capitulo.id + '.html';
-    //   });
-    
-    // Modifica este enlace para apuntar a los videos de YouTube
-  const enlaceCapitulo = document.createElement('a');
-  // enlaceCapitulo.href = `https://www.youtube.com/watch?v=${capitulo.youtubeID}`;
-  enlaceCapitulo.href = `https://www.youtube.com/watch?v=${capitulo.youtubeID}`;
-  enlaceCapitulo.target = '_blank'; // Abre el enlace en una nueva pestaña
+    const enlaceCapitulo = document.createElement('a');
+    enlaceCapitulo.href = `https://www.youtube.com/watch?v=${capitulo.youtubeID}`;
+    enlaceCapitulo.target = '_blank'; // Abre el enlace en una nueva pestaña
 
     divCapitulo.appendChild(imgCapitulo);
     divCapitulo.appendChild(divSinopsis);
 
     seccionCapitulos.appendChild(divCapitulo);
-    
-
   });
 }
 
-// Llamada a la función para generar las miniaturas al cargar la página
 document.addEventListener('DOMContentLoaded', generarMiniaturas);
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  const slider = document.querySelector('.slider');
-  const slides = document.querySelectorAll('.slide');
-
-  let counter = 1;
-
-  setInterval(() => {
-    counter++;
-    if (counter > slides.length) {
-      counter = 1;
-    }
-
-    slider.style.transform = `translateX(${-counter * 100}%)`;
-  }, 3000); // Cambia de imagen cada 3 segundos (ajusta según tus preferencias)
-});
