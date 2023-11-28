@@ -3,40 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="parrilla.css">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <!-- <link rel="stylesheet" href="parrilla.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="capitulos.css">
   <title>Capítulo</title>
 </head>
 <body>
-    <div class="section__main">
-      <div class="section__main--left">
-        <img src="/images/franja-doble-left.png" alt="">
-      </div>
-      <div class="section__main--center pagina-de-capitulo">
+  <!-- MAIN CONTAINER -->
+  <div class="cap-main__container">
 
-        <div class="container_video--capitulo">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/5WeL4AvCbk8?si=9tl7ktAkn3VPIZQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- start row 1 -->
+    <div class="cap-section__main--capitulo">
+        <!-- start row1-col1 -->
+        <div class="cap-section__main--left">
+          <img src="/images/franja-doble-left.png" alt="">
         </div>
-        <div class="container_info--capitulo">
-          <h3>Capítulo 2</h3>
-          <h1>Popayán Construida por Mujeres</h1>
-          <p>Un reconocimiento a la mujer que habita Popayán, a la mujer campesina, a la mujer negra,  a la indígena, a la mestiza, a todas las mujeres que con su templanza, determinación y libertad han construido caminos de esperanza. Esta ciudad las espera con los brazos abiertos para vivir en ella, un viaje en el tiempo.</p>
+        <!-- end row1-col1 -->
+
+        <!-- start row1-col2 -->
+        <div class="cap-section__main--center">
+          <div class="container_video--capitulo">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5WeL4AvCbk8?si=9tl7ktAkn3VPIZQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="container_info--capitulo">
+            <h3>Capítulo 2</h3>
+            <h1>Popayán Construida por Mujeres</h1>
+            <p>Un reconocimiento a la mujer que habita Popayán, a la mujer campesina, a la mujer negra,  a la indígena, a la mestiza, a todas las mujeres que con su templanza, determinación y libertad han construido caminos de esperanza. Esta ciudad las espera con los brazos abiertos para vivir en ella, un viaje en el tiempo.</p>
+          </div>
         </div>
-      </div>
-      <div class="section__main--right">
-        <img src="/images/ornamento_esquina_sd.png" alt="">
-      </div>
+        <!-- end row1-col2 -->
+
+        <!-- start row1-col3 -->
+        <div class="cap-section__main--right">
+          <img src="/images/ornamento_esquina_sd.png" alt="">
+        </div>
+        <!-- end row1-col3 -->
+
     </div>
+    <!-- end row 1 -->
     
-    <div class="footer">
-      <div class="footer__banner--container">
-        <a class="footer__banner--link" href="/parrilla.html">
-            <img class="footer__banner" src="/images/banner_de_informacion.png" alt="bannner de información">
-        </a>
+    <!-- start row 2 -->
+    <div class="cap-section__main--galeria">
+      <!-- start row2-col1 -->
+      <div class="cap-section__main--left"><p>G left</p></div>
+      <!-- end row2-col1 -->
+      <!-- start row2-col2 -->
+      <div class="cap-section__main--center">
+        <!-- <div class="section_main--galeria"> -->
+            <p>Aqui va las fotos</p>
+            <div class="container__galeria">
+              <img class="galeria--item" src="/images/cap1_01.jpg" alt="galer&iacute;a de fotos">
+            </div>
+        <!-- </div> -->
+      </div>
+      <!-- end row2-col2 -->
+      <!-- start row2-col3 -->
+      <div class="cap-section__main--right"><p>G right</p></div>
     </div>
+    <!-- end row 2 -->
 
+    <!--start row 3 -->
+    <div class="section_footer">
+      <div class="ch-footer__banner--container">
+          <!-- <a class="footer__banner--link" href="/parrilla.html">
+              <img class="footer__banner" src="/images/banner_de_informacion.png" alt="bannner de información">
+          </a> -->
+      </div>
   </div>
+  <!-- end row 3 -->
+    
+  </div>
+  <!-- end main__container -->
 
-  <script src="/script_menu.js"></script>
+  <script src="/parrilla.js"></script>
 </body>
 </html>

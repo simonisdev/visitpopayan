@@ -1,12 +1,13 @@
-/* font-family: 'Didact Gothic', sans-serif;
-font-family: 'Overpass', sans-serif; */
+/* font-family: 'Overpass', sans-serif; */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+html {
+  font-family: 'Overpass', sans-serif;
+}
   body {
-    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -59,6 +60,21 @@ font-family: 'Overpass', sans-serif; */
   .section__main--center {
     background-color: #fff;
   }
+  .texto-inicial,
+  .texto-final {
+    /* background-color: #EEBB33; */
+    display: flex;
+    height: 15%;
+    padding: 0 20px;
+    align-items: center;
+    font-weight: 700;
+  }
+  .texto-inicial p {
+    align-content: center;
+  }
+  .texto-final {
+    justify-content: flex-end;
+  }
   .section__main--left {
     text-align: center;
   }
@@ -76,7 +92,7 @@ font-family: 'Overpass', sans-serif; */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 40px;
-    padding: 100px 20px 0 20px;
+    padding: 20px;
   }
 .capitulo {
     position: relative;
@@ -102,7 +118,25 @@ font-family: 'Overpass', sans-serif; */
     transition: opacity 0.3s;
   }
 
+  .titulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
   .capitulo:hover .sinopsis {
+    opacity: 1;
+  }
+  .capitulo:hover .titulo {
     opacity: 1;
   }
 
@@ -127,66 +161,9 @@ font-family: 'Overpass', sans-serif; */
 
 
 /* pagina de capitulo */
-.pagina-de-capitulo {
-  display: flex;
-  width: 70%;
-}
-.container_video--capitulo,
-.container_info--capitulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  /* background-color: #fff; */
-}
-.container_video--capitulo {
-  border-radius: 5px;
-}
-.container_info--capitulo {
-  flex-direction: column;
-  padding: 20px;
-}
-.container_info--capitulo h1 {
-  margin-bottom: 20px;
-}
-.container_info--capitulo p {
-  text-align: justify;
-}
-/* .container_video--capitulo iframe {
-  width: 100%;
-} */
 /* fin pagina de capitulo */
-.contenido-capitulo-ad {
-  display: flex;
-  column-gap: 10px;
-}
-.contenido-capitulo-ad h1 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.miniatura-ad {
-  padding: 10px;
-}
-.sinopsis-ad {
-  padding: 0 20px;
-  text-align: justify;
-}
-.sinopsis-ad h2 {
-  margin-top: 15px;
-  text-align: end;
-  color: #333;
-}
-.galeria-ad {
-  background-color: #EEBB33;
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-}
 
-.galeria-ad img{
-  max-width: 400px;
-  padding: 1rem;
-}
+
 
 
 /* footer */
@@ -210,17 +187,27 @@ font-family: 'Overpass', sans-serif; */
     width: 100vw;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1080px) {
+  /* @media screen and (min-width: 769px)  {
     .capitulos {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(5, 1fr);
     }
     .section__main--left,
     .section__main--right {
       width: 20%;
     }
+  } */
+
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .capitulos {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .section__main--left,
+    .section__main--right {
+      width: 15%;
+    }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 425px) {
     .capitulos {
       grid-template-columns: 1fr;
       padding-top: 20px;
