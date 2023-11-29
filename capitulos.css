@@ -8,28 +8,82 @@ body {
   font-family: 'Overpass', sans-serif;
 }
 
+/* .cap-main__container = .main-container */
+.main-container {
+  width: 100%;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-rows: auto auto;
+}
+/* 
 .cap-main__container {
-  /* background-color: red; */
   display: grid;
   grid-template-rows: auto auto 1fr;
   grid-template-columns: 1fr 2fr 1fr;
   height: 100vh;
-}
+} */
 
-/* row 1 */
+.grid-container {
+  display: grid;
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 1fr 1fr;
+}
+/* .cap-section__main--capitulo {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+} */
+
+/* .left-column, .middle-column, .right-column, .bottom-row {
+  border: 1px solid #ccc;
+  padding: 10px;
+} */
+
 .cap-section__main--left,
 .cap-section__main--right {
-  /* background-color: aqua; */
-  border: 5px solid green;
-  border-style: double;
+  /* background-color: green; */
   width: 15%;
 }
+
+/* .cap-section__main--left{} = .left-column{} */
 .cap-section__main--left {
+  background-color: #c42525;
   text-align: center;
 }
 .cap-section__main--left img {
   width: 80%;
 }
+
+.middle-column {
+  background-color: #A9A9A9;
+}
+
+.inner-row {
+  background-color: #CCCCCC;
+}
+
+.right-column {
+  background-color: #808080;
+}
+
+.bottom-row {
+  background-color: #D3D3D3;
+}
+/* .section_footer {
+background-image: url('/images/banner_de_informacion.png');
+background-repeat: no-repeat;
+background-size: contain;
+width: 100%;
+} */
+.bottom-row a img {
+  width: 100vw;
+}
+
+/* row 1 */
+
+
 .cap-section__main--right {
   text-align: end;
 }
@@ -37,16 +91,11 @@ body {
   width: 100%;
 }
 /* fila1 col2 */
-.cap-section__main--center{
+/* .cap-section__main--center{
   background-color: aqua;
   width: 70%;
-}
-.cap-section__main--capitulo {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  width: 100vw;
-}
+} */
+
 
 .cap-section__main--galeria {
   background-color: yellow;
@@ -56,12 +105,7 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Columnas automáticas con un mínimo de 200px y máximo de 1fr */
   gap: 10px; /* Espacio entre las imágenes */
 }
-.section_footer {
-background-image: url('/images/banner_de_informacion.png');
-background-repeat: no-repeat;
-background-size: contain;
-width: 100%;
-}
+
 
 .container_video--capitulo,
 .container_info--capitulo {
@@ -120,6 +164,82 @@ width: 100%;
   max-width: 400px;
   padding: 1rem;
 }
+
+
+/* ESTILOS CONTENIDO DE CAPITULO */
+
+.main-container-capitulo {
+  /* referencias */
+  background-color: springgreen;
+  border: 5px solid red;
+  /* estilos */
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+.content-container-capitulo {
+  /* referencias */
+  background-color:burlywood;
+  border: blue;
+  /* box-shadow: inset 0px -8px 6px rgba(0, 0, 0, .7); */
+  /* estilos */
+  display: flex;
+  width: 100%;
+  max-height: 70%;
+}
+.left-stripe,
+.right-stripe {
+  border: 5px solid violet;
+  width: 15%;
+  height: 100%;
+}
+.content-capitulo {
+  /* referencias */
+  border: 5px solid black;
+  border-style: double;
+  /* estilos */
+  width: 70%;
+  height: 100%;
+}
+
+.footer-container-capitulo {
+  /* referencias */
+  border: 3px solid yellow;
+  min-height: 30%;
+  background-image: url('/images/banner_de_informacion.png');
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* estilos */
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+}
+.container-btn-contacto {
+  /* referencias */
+  /* border: 2px solid orange; */
+  /* estilos */
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  width: 30%;
+  height: 100%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.btn-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1C9838;
+  color: white;
+  height: 35px;
+  width: 100px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+/* FIN ESTILOS CONTENIDO DE CAPITULO */
 
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
