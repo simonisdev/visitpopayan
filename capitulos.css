@@ -39,13 +39,22 @@ body {
   grid-template-rows: 1fr 1fr; */
   width: 70%;
 }
+.content-capitulo-row1 {
+  display: flex;
+  padding-top: 40px;
+}
 .video-capitulo {
   text-align: center;
 }
 .video-capitulo iframe {
   background-color: #333;
-  margin: 40px 0;
+  /* min-width: 560px;
+  min-height: 315px; */
   border-radius: 10px;
+}
+.texto-capitulo {
+  padding: 0 20px;
+  text-align: justify;
 }
 .galeria {
   display: flex;
@@ -107,7 +116,26 @@ body {
   border: 2px solid #075319;
 }
 /* FIN ESTILOS CONTENIDO DE CAPITULO */
-
+.main-container-contacto {
+  display: flex;
+  flex-direction: column;
+}
+.container-contacto {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container-contacto {
+  height: 30vh;
+  background-image: url('/images/banner_de_informacion.png');
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
   /* .capitulos {
@@ -120,7 +148,17 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+  body {
+    font-size: 1rem;
+  }
 
+  h1 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  h3 {
+    text-align: right;
+  }
   .main-container-capitulo {
     display: flex;
     flex-direction: column;
@@ -136,11 +174,41 @@ body {
     padding: 20px;
     width: 100vh;
   }
+  .content-capitulo-row1{
+    flex-direction: column;
+    padding: 0;
+  }
+  .video-capitulo iframe {
+    width: 300px;
+  }
   .galeria {
     flex-direction: column;
   }
+  .galeria-item img {
+    width: 250px;
+    height: auto;
+  }
+  .galeria-item img:hover {
+    width: 255px;
+    border: 1px solid #F9C232;
+    transition: all 0.7s ease;
+  }
   .footer-container-capitulo {
-    width: 100vh;
+    width: 100%;
+  }
+  .btn-contacto {
+    height: 25px;
+    width: 80px;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  .container-btn-contacto a {
+    font-size: 12px;
+  }
+  .btn-contacto:hover {
+    /* background-color: #1C9838; */
+    opacity: 0.9;
+    border: 2px solid #075319;
   }
 
 }
