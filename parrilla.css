@@ -4,10 +4,11 @@
   margin: 0;
   padding: 0;
 }
-html {
+/* html {
   font-family: 'Overpass', sans-serif;
-}
+} */
   body {
+    font-family: 'Overpass', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -67,10 +68,12 @@ html {
     height: 15%;
     padding: 0 20px;
     align-items: center;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 1.6rem;
   }
   .texto-inicial p {
     align-content: center;
+    padding-top: 20px;
   }
   .texto-final {
     justify-content: flex-end;
@@ -213,10 +216,10 @@ html {
       padding-top: 20px;
     }
 
-      /* contenido extra */
-      .pagina-de-capitulo{
-        flex-direction: column;
-      }
+    /* contenido extra */
+    .pagina-de-capitulo{
+      flex-direction: column;
+    }
     .contenido-capitulo-ad {
       flex-direction: column;
       text-align: justify;
