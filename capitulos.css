@@ -31,7 +31,8 @@ body {
 .section__main--right,
 .left-stripe,
 .right-stripe {
-  width: 15%;
+  /* width: 15%; */
+  width: 30%;
   height: 100%;
   text-align: center;
 }
@@ -43,7 +44,7 @@ body {
 .right-stripe img {
   width: 100%;
 }
-.section__main--center,
+/* .section__main--center {} */
 .content-capitulo {
   /* display: grid;
   grid-template-columns: 1fr 1fr;
@@ -211,7 +212,7 @@ body {
 }
 
 .footer-container-capitulo {
-  min-height: 40%;
+  min-height: 45%;
   background-image: url('/images/banner_de_informacion.png');
   background-position-y: bottom;
   background-repeat: no-repeat;
@@ -309,7 +310,8 @@ body {
   justify-content: flex-end;
 }
 
-/* @media screen and (min-width: 426px) and (max-width: 768px) {
+/* @media screen and (min-width: 426px) and (max-width: 768px) { */
+  /* @media screen and (min-width: 768px) and (max-width: 1023px) {
   .main-container-capitulo {
     display: flex;
     flex-direction: column;
@@ -340,7 +342,8 @@ body {
 } */
 
 /* @media screen and (max-width: 425px) */
-@media screen and (min-width: 320px) and (max-width: 974px) {
+/* @media screen and (min-width: 320px) and (max-width: 974px) { */
+  @media screen and (min-width: 320px) and (max-width: 768px) {
   body {
     font-size: 1rem;
   }
@@ -381,7 +384,7 @@ body {
     display: none;
   }
   .content-capitulo {
-    padding: 20px;
+    /* padding: 20px; */
     width: 100vh;
   }
   .content-capitulo-row1{
@@ -429,15 +432,15 @@ body {
     /* flex-direction: column;
     justify-content: center; */
   }
+  .texto-inicial {
+    height: auto;
+  }
   .texto-final {
     display: flex;
     flex-direction: column;
-    padding: 40px auto;
-  }
-  .espaciador--menu-footer {
-    background-color: red;
-    width: 100vw;
-    height: 15%;
+    justify-content: flex-start;
+    padding-bottom: 50px;
+    height: auto;
   }
   .btn-contacto {
     height: 25px;
@@ -464,6 +467,11 @@ body {
     text-align: center;
   }
   .footer-container-contacto {
-    height: 40vh;
+    height: 50vh;
+    padding-bottom: 50px;
   }
+  /* .footer-container-capitulo {
+    background-color: red;
+    height: auto;
+  } */
 }
