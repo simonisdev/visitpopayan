@@ -110,13 +110,31 @@ function generarMiniaturas() {
     // divSinopsis.classList.add('sinopsis');
     // divSinopsis.textContent = capitulo.sinopsis;
 
+    //*****************************************
+    // const divTitulo = document.createElement('div');
+    // divTitulo.classList.add('titulo');
+    // divTitulo.textContent = `Capitulo `+capitulo.episodio+`. `+capitulo.titulo;
+
+    // divCapitulo.addEventListener('click', function () {
+    //   window.location.href = '/capitulo' + capitulo.episodio + '.html';
+    //   });
+
     const divTitulo = document.createElement('div');
     divTitulo.classList.add('titulo');
-    divTitulo.textContent = `Capitulo `+capitulo.episodio+` - `+capitulo.titulo;
+
+    const capituloTexto = document.createTextNode(`Capitulo ${capitulo.episodio}. `);
+    const saltoDeLinea = document.createElement('br');
+    const tituloTexto = document.createTextNode(capitulo.titulo);
+
+    divTitulo.appendChild(capituloTexto);
+    divTitulo.appendChild(saltoDeLinea);
+    divTitulo.appendChild(tituloTexto);
 
     divCapitulo.addEventListener('click', function () {
-      window.location.href = '/capitulo' + capitulo.episodio + '.html';
-      });
+     window.location.href = '/capitulo' + capitulo.episodio + '.html';
+});
+
+      // *********************************************
 
     // const enlaceCapitulo = document.createElement('a');
     // enlaceCapitulo.href = `https://www.youtube.com/watch?v=${capitulo.youtubeID}`;
