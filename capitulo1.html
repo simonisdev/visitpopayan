@@ -55,6 +55,14 @@
               <img src="/images/galerias/cap1_f4.jpg" alt="">
             </div>
           </div>
+
+          <div id="popupImagen" class="popup">
+            <span class="cerrar" onclick="cerrarPopup()">&times;</span>
+            <img class="contenido-popup" id="imagenAmpliada">
+            <button class="btn-izquierda" onclick="cambiarImagen(-1)">&#10094;</button>
+            <button class="btn-derecha" onclick="cambiarImagen(1)">&#10095;</button>
+          </div>
+
         </div>
        
         <div class="right-stripe">
@@ -92,5 +100,7 @@
     </div>
 
     <script src="/parrilla.js"></script>
+    <script src="fotos.js"></script>
+    
 </body>
 </html>
