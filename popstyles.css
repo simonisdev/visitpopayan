@@ -1,0 +1,306 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Overpass', sans-serif;
+  }
+  
+  /* Estilos de contenedores principales */
+  .main-container-contacto,
+  .parrilla--section__main,
+  .main-container-capitulo {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__menu--logo-popayan {
+    display: none;
+  }
+  .main-container-capitulo {
+    height: 100vh;
+  }
+  .parrilla--section__main {
+    height: 70vh;
+  }
+  
+  /* Estilos de secciones */
+  .section__main-content,
+  .content-container-capitulo {
+    display: flex;
+    width: 100%;
+    max-height: 100%;
+  }
+  .section__main--left,
+  .section__main--right,
+  .left-stripe,
+  .right-stripe {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+  }
+  .section__main--left img,
+  .section__main--right img,
+  .left-stripe img,
+  .right-stripe img {
+    height: 80%;
+    width: 100%;
+  }
+  .content-capitulo {
+    width: 70%;
+  }
+  
+  /* Estilos de textos */
+  .texto-inicial,
+  .texto-final {
+    display: flex;
+    height: 15%;
+    padding: 0 20px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+    cursor: context-menu;
+  }
+  .texto-inicial p {
+    align-content: center;
+    padding-top: 20px;
+  }
+  .texto-final {
+    justify-content: flex-end;
+  }
+  
+  /* Estilos de galería y capítulos */
+  .capitulos,
+  .container__capitulos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+    margin: 20px 0;
+  }
+  .capitulo,
+  .capitulo__item-menu {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .capitulo img,
+  .capitulo__item-menu a img {
+    width: 100%;
+    display: block;
+  }
+  .titulo,
+  .sinopsis {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .capitulo:hover .titulo,
+  .capitulo:hover .sinopsis {
+    opacity: 1;
+  }
+  
+  /* Estilos del footer */
+  .footer-container-contacto,
+  .footer-container-capitulo {
+    min-height: 45%;
+    background-image: url('/images/banner_de_informacion.png');
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Otros estilos específicos */
+  /* ... (aquí irían otros estilos que no se modificaron o que son específicos) */
+  
+  /* Media Queries */
+  @media screen and (min-width: 320px) and (max-width: 1020px) {
+    /* Estilos para móviles */
+  
+    body {
+      font-size: 1rem;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+      text-align: left;
+      margin: 10px 0;
+    }
+  
+    h3 {
+      margin-top: 15px;
+    }
+  
+    .main-container-capitulo,
+    .parrilla--section__main,
+    .section__main {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      height: auto;
+    }
+  
+    .header__menu--logo-popayan {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .header__menu--logo-popayan img {
+      width: 75vw;
+      margin-top: 25px;
+    }
+  
+    .section__main--center {
+      width: 100%;
+      padding: 0 15px;
+    }
+  
+    .capitulos {
+      grid-template-columns: 1fr;
+      padding-top: 20px;
+    }
+  
+    .capitulo .sinopsis,
+    .capitulo .titulo {
+      background: none;
+      opacity: 1;
+      padding-top: 70px;
+      text-shadow: -3px 4px 2px rgba(0, 0, 0, 0.8);
+    }
+  
+    .section__main--left,
+    .section__main--right,
+    .left-stripe,
+    .right-stripe {
+      display: none;
+    }
+  
+    .content-capitulo {
+      width: 100vh;
+    }
+  
+    .content-capitulo-row1 {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .video-capitulo iframe {
+      width: 300px;
+    }
+  
+    .galeria {
+      display: flex;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      perspective: none;
+      justify-content: space-between;
+    }
+  
+    .galeria-item {
+      flex: none;
+      width: 100%;
+      scroll-snap-align: start;
+    }
+  
+    .galeria img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  
+    .container-menu-footer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      justify-content: center;
+    }
+  
+    .container-menu-footer a {
+      justify-content: center;
+    }
+  
+    .texto-inicial,
+    .texto-final {
+      height: auto;
+    }
+  
+    .texto-inicial p,
+    .texto-final p {
+      text-align: justify;
+    }
+  
+    .texto-final {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-bottom: 50px;
+      height: auto;
+    }
+  
+    .btn-contacto {
+      height: 25px;
+      width: 80px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+  
+    .container-btn-contacto a {
+      font-size: 12px;
+    }
+  
+    .btn-contacto:hover {
+      opacity: 0.9;
+      border: 2px solid #075319;
+    }
+  
+    .container-contacto {
+      height: 60vh;
+      padding: 20px;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .container-contacto h1 {
+      text-align: center;
+    }
+  
+    .footer-container-contacto {
+      height: 50vh;
+      padding-bottom: 50px;
+    }
+  
+    .main-container-contacto .container-contacto img {
+      display: none;
+    }
+  
+    .nav-rrss {
+      display: none;
+    }
+  
+    .nav__rrss--mobile {
+      display: flex;
+      justify-content: space-around;
+      opacity: .9;
+    }
+  
+    .nav__rrss--mobile img {
+      height: 30px;
+    }
+  }
+  
+  
